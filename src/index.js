@@ -6,7 +6,7 @@ const mysql = require("mysql2");
 const app = express();
 const port = 3000;
 
-//Use teh pug template ingine
+//Use the pug template engine
 app.set("view engine", "pug");
 app.set("views","./views");
 
