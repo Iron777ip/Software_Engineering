@@ -9,4 +9,4 @@ jobs:
     steps:
       - checkout:
           path: ~/Lab_assisten_soft_eng
-     - run: npm install
+      - run: npm install
