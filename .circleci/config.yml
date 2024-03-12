@@ -3,10 +3,10 @@ orbs:
   node: circleci/node@4.7.0
 jobs:
   build:
-    working_directory: ~/software-engineering/src
+    working_directory: ~/Software_Engineering/src
     docker:
       - image: cimg/node:lts
     steps:
       - checkout:
-          path: ~/software-engineering
+          path: ~/Software_Engineering
       - run: npm install
