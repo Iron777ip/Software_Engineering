@@ -3,10 +3,10 @@ orbs:
   node: circleci/node@4.7.0 
 jobs:
   build:
-    working directory: ~/Lab_assisten_soft_eng/src
+    working directory: ~/Software_Engineering/src
     docker:
       - image: cimg/node:Its 
     steps:
       - checkout:
-          path: ~/Lab_assisten_soft_eng
+          path: ~/Software_Engineering
       - run: npm install
