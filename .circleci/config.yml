@@ -1,12 +1,12 @@
-version: 2.1 
+version: 2.1
 orbs:
-  node: circleci/node@4.7.0 
+  node: circleci/node@4.7.0
 jobs:
   build:
-    working directory: ~/Lab_assisten_soft_eng/src
+    working_directory: ~/Software_Engineering/src
     docker:
-      - image: cimg/node:Its 
+      - image: cimg/node:lts
     steps:
       - checkout:
-          path: ~/Lab_assisten_soft_eng
+          path: ~/Software_Engineering
       - run: npm install
