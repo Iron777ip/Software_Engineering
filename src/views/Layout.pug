@@ -1,5 +1,13 @@
-html 
-    head 
-        title Title here...
-        body 
-             block content
+html
+  head
+    link(rel="stylesheet", href="/style.css")
+    title My Cat Website
+    block head
+  body
+    .layout
+      .layout-nav
+        include mixins/nav
+        +navigation()
+        
+      .layout-content
+        block content
